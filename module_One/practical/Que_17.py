@@ -1,0 +1,20 @@
+##  6. Generators and Iterators
+
+
+## Q:1)  Write a generator function that generates the first 10 even numbers.
+
+# Generator function to produce first 10 even numbers
+
+def even_numbers():
+    num = 2
+    count = 0
+
+    while count < 10:
+        yield num
+        num += 2
+        count += 1
+
+
+# Using the generator
+for value in even_numbers():
+    print(value)
